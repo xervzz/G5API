@@ -334,7 +334,7 @@
      sum(v5) as v5, sum(roundsplayed) as trp, sum(flashbang_assists) as fba,
      sum(damage) as dmg, sum(headshot_kills) as hsk, count(id) as totalMaps,
      sum(knife_kills) as knifekills, sum(friendlies_flashed) as fflash,
-     sum(enemies_flashed) as eflash, sum(util_damage) as utildmg
+     sum(enemies_flashed) as eflash, sum(util_damage) as utildmg, sum(teamkills) as tk
      FROM    player_stats
      WHERE   match_id IN (
          SELECT  id
