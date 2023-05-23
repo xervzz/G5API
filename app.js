@@ -30,6 +30,7 @@ import usersRouter from "./routes/users.js";
 import vetoesRouter from "./routes/vetoes.js";
 import vetosidesRouter from "./routes/vetosides.js";
 import passport from "./utility/auth.js";
+import ranksRouter from "./routes/ranks.js";
 // End Route Files
 
 
@@ -130,6 +131,7 @@ const options = {
     "./routes/users.js",
     "./routes/vetoes.js",
     "./routes/vetosides.js",
+    "./routes/ranks.js",
   ],
 };
 const swaggerSpec = swaggerJSDoc(options);
@@ -152,6 +154,7 @@ app.use("/seasons", seasonsRouter);
 app.use("/match", legacyAPICalls);
 app.use("/leaderboard", leaderboardRouter);
 app.use("/maps", mapListRouter);
+app.use("/ranks", ranksRouter);
 // END ROUTES
 
 // Steam API Calls.
