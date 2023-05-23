@@ -463,6 +463,8 @@
        collisionPlayer.k4 += parseFloat(player.k4);
        collisionPlayer.k5 += parseFloat(player.k5);
        collisionPlayer.v1 += parseFloat(player.v1);
+       collisionPlayer.knifekills += parseFloat(player.knifekills);
+       collisionPlayer.tk += parseFloat(player.tk);
        collisionPlayer.v2 += parseFloat(player.v2);
        collisionPlayer.v3 += parseFloat(player.v3);
        collisionPlayer.v4 += parseFloat(player.v4);
